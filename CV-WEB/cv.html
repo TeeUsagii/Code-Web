@@ -6,87 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Nguyễn Minh Tiến</title>
     <!-- css -->
-    <style>
-        .grid-1 {
-            display: grid;
-            grid-template-columns: auto;
-        }
-
-        .grid-2 {
-            display: grid;
-            grid-template-columns: auto auto;
-        }
-
-        .grid-3 {
-            display: grid;
-            grid-template-columns: auto auto auto;
-        }
-
-        .grid-item-2 {
-            grid-column-start: 2;
-            grid-column-end: 4;
-        }
-    </style>
 </head>
 
 <body>
     <!-- Cv -->
-    <div style="margin: 5% 20%; border: 2px solid; font-family: Arial, Helvetica, sans-serif;">
-        <!-- Header cv -->
+    <div style="margin: 5% 10%; border: 2px solid; font-family: Arial, Helvetica, sans-serif;">
+
         <div style=" margin: 40px;">
-            <div class="grid-3">
-                <!-- avt -->
-                <img class="grid-item-1"
-                    src="data:image/jpeg;base64,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"
-                    alt="">
-                <!-- end avt -->
+            <table>
+                <!-- Header cv -->
+                <tr>
+                    <th><!-- avt -->
+                        <img style="width: 90%;"
+                            src="https://cdn.discordapp.com/attachments/831081902051557386/1144231306071392276/image.png"
+                            alt="">
+                        <!-- end avt -->
+                    </th>
+                    <td>
+                        <div style="padding-left: 50px; text-align: left;">
 
-                <!-- info -->
-                <div class="grid-item-2" style="padding-left: 50px; text-align: left;">
-                    <div style="padding: 10px 0; font-size: 40px;">
-                        <strong>NGUYỄN MINH TIẾN</strong>
-                    </div>
-                    <div style="padding: 10px 0; font-size: 30px">
-                        WEB DEVELOPER
-                    </div>
-                    <div style="border-bottom: solid 2px;"></div>
-                    <div style="padding: 10px 0; line-height: 24px;">
-                        Nhà phát triển web tỉ mỉ với hơn 2 năm kinh nghiệm lập trình viên, đam mê thiết kế trang web và
-                        là người luôn tin tưởng vào cách tiếp cận ưu tiên hàng đầu vào thiết bị di động. Chứng nhận W3C.
-                        Đã triển khai phương pháp tiếp cận trang web đáp ứng mới giúp tăng lưu lượng truy cập trên thiết
-                        bị di động lên đến 20%.
-                    </div>
-                </div>
-                <!-- end info -->
+                            <div style="padding: 10px 0; font-size: 40px; color: rgb(0, 89, 255);">
+                                <strong>NGUYỄN MINH TIẾN</strong>
+                            </div>
+                            <div style="padding: 10px 0; font-size: 30px">
+                                WEB DEVELOPER
+                            </div>
+                            <div style="border-bottom: solid 2px;"></div>
+                            <div style="padding: 10px 0; line-height: 24px;">
+                                Nhà phát triển web tỉ mỉ với hơn 2 năm kinh nghiệm lập trình viên, đam mê thiết kế trang
+                                web và
+                                là người luôn tin tưởng vào cách tiếp cận ưu tiên hàng đầu vào thiết bị di động. Chứng
+                                nhận W3C.
+                                Đã triển khai phương pháp tiếp cận trang web đáp ứng mới giúp tăng lưu lượng truy cập
+                                trên thiết
+                                bị di động lên đến 20%.
+                            </div>
+                        </div>
+                    </td>
+                </tr>
 
-            </div>
-            <!-- End Header cv -->
+                <!-- End Header cv -->
 
-            <!-- Content -->
-            <div>
+            </table>
+
+            <table>
                 <!-- infomation -->
-                <div class="grid-3">
-                    <div>
-                        <div style="border-bottom: solid 2px; margin: 10px 20px 0 0;"></div>
+                <tr>
+                    <td style="padding: 10px; width: 33%; vertical-align: top;">
+                        <div style="border-bottom: solid 2px; color: #1481C1;"></div>
                         <p style="font-size: 25px;"> <strong>LIÊN HỆ</strong></p>
-                        <div style="border-bottom: solid 2px; margin: 10px 20px 0 0;"></div>
-                        <p>c0376793075@gmail.com</p>
-                        <p>0376793075</p>
-                        <p>github.com/TeeUsagii</p>
-                        <p>Phuc Tan, Hoan Kiem, Ha Noi</p>
-                    </div>
-                    <div>
-                        <div style="border-bottom: solid 2px; margin: 10px 20px 0 0;"></div>
+                        <div style="border-bottom: solid 2px; color: #1481C1;"></div>
+                        <div>
+                            <p>c0376793075@gmail.com</p>
+                            <p>0376793075</p>
+                            <p>github.com/TeeUsagii</p>
+                            <p>Phuc Tan, Hoan Kiem, Ha Noi</p>
+                        </div>
+                    </td>
+
+                    <td style="padding: 10px; width: 33%; vertical-align: top;">
+                        <div style="border-bottom: solid 2px; color: #1481C1;"></div>
                         <p style="font-size: 25px;"> <strong>HỌC VẤN</strong></p>
-                        <div style="border-bottom: solid 2px; margin: 10px 20px 0 0;"></div>
-                        <h3>ĐẠI HỌC MỎ - ĐỊA CHẤT</h3>
-                        <P>CÔNG NGHỆ THÔNG TIN</P>
-                        <P>Đang học</P>
-                    </div>
-                    <div>
-                        <div style="border-bottom: solid 2px; margin: 10px 20px 0 0;"></div>
-                        <p style="font-size: 25px;"> <strong>KỸ NĂNG</strong></p>
-                        <div style="border-bottom: solid 2px; margin: 10px 20px 0 0;"></div>
+                        <div style="border-bottom: solid 2px; color: #1481C1;"></div>
+                        <div>
+                            <h3>ĐẠI HỌC MỎ - ĐỊA CHẤT</h3>
+                            <P>CÔNG NGHỆ THÔNG TIN</P>
+                            <P>Đang học</P>
+                        </div>
+
+                    </td>
+
+                    <td style="padding: 10px; width: 33%; vertical-align: top;">
+                        <div style="border-bottom: solid 2px; color: #1481C1;"></div>
+                        <p style="font-size: 25px;"><strong>KỸ NĂNG</strong></p>
+                        <div style="border-bottom: solid 2px; color: #1481C1;"></div>
                         <h3>LẬP TRÌNH WEB</h3>
                         <ul>
                             <li>
@@ -99,36 +92,92 @@
                                 <p>Khả năng giao tiếp tiếng anh ở mức trôi chảy</p>
                             </li>
                         </ul>
-                    </div>
-                </div>
+                    </td>
+
+                </tr>
                 <!-- end infomation -->
 
+            </table>
+
+            <table>
                 <!-- WORK EXPERIENCE -->
                 <div>
-                    <div style="border-bottom: solid 2px; margin: 10px 20px 0 0;"></div>
+                    <div style="border-bottom: solid 2px;"></div>
                     <p style="font-size: 25px;"> <strong>KINH NGHIỆM LÀM VIỆC</strong></p>
-                    <div style="border-bottom: solid 2px; margin: 10px 20px 0 0;"></div>
-                    <div class="grid-3">
-                        <div class="grid-item-1" style="border-left: solid 2px; margin: 20px 20px 0 0;">
-                            <p style="margin-left: 20px;"><strong>3/2023 - Hiện tại</strong></p>
-                            <p style="margin-left: 20px;"><strong>Công ty A</strong></p>
-                        </div>
-                        <div class="grid-item-2" style="margin: 20px;">
-                            <p style="margin-left: 20px;"></p><strong>SYSTEM ADMIN</strong></p>
-                            <ul>
-                                <li><p>Cấu hình, bảo trì, duy trì hoạt động của hệ thống máy chủ, máy tính công ty.</p></li>
-                                <li><p>Hỗ trợ kĩ thuật cho các phòng ban.</p></li>
-                                <li><p>Thực hiện nghiên cứu các chương trình để giúp hệ thống mạng, máy chủ được làm việc tốt hơn.</p></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <div style="border-bottom: solid 2px;"></div>
+                    <tr>
+                        <td style="vertical-align: top; width: 40%;">
+                            <div style="border-left: solid 2px; ">
+                                <p style="margin-left: 20px;"><strong>3/2023 - Hiện tại</strong></p>
+                                <p style="margin-left: 20px;"><strong>Công ty Yakson Beauty</strong></p>
+                            </div>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <div style="width: 60%;">
+                                <p style=""></p><strong>SYSTEM ADMIN</strong></p>
+                                <ul>
+                                    <li>
+                                        <p>Cấu hình, bảo trì, duy trì hoạt động của hệ thống máy chủ, máy tính công ty.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Hỗ trợ kĩ thuật cho các phòng ban.</p>
+                                    </li>
+                                    <li>
+                                        <p>Thực hiện nghiên cứu các chương trình để giúp hệ thống mạng, máy chủ được làm
+                                            việc tốt hơn.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
                 </div>
-            </div>
-            <div>
-
-            </div>
-
+            </table>
+            <table>
+                <td style="vertical-align: top; padding: 10px;">
+                    <div style="">
+                        <div style="border-bottom: solid 2px; color: #1481C1;"></div>
+                        <p style="font-size: 25px;"><strong>CHỨNG CHỈ</strong></p>
+                        <div style="border-bottom: solid 2px; color: #1481C1;"></div>
+                        <h3>2022</h3>
+                        <ul>
+                            <li>
+                                <p>Front End Web Developer Certification by W3C (edX)</p>
+                            </li>
+                            <li>
+                                <p>Pluralsight Front End Web Development Certification</p>
+                            </li>
+                        </ul>
+                        <h3>2023</h3>
+                        <ul>
+                            <li>
+                                <p>Front-End Web UI Frameworks and Tools: Bootstrap 4</p>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+                <td style="width: 60%; vertical-align: top; padding: 10px;">
+                    <div style="border-bottom: solid 2px; color: #1481C1;"></div>
+                    <p style="font-size: 25px;"><strong>SỞ THÍCH</strong></p>
+                    <div style="border-bottom: solid 2px; color: #1481C1;"></div>
+                    <h3>CHỤP ẢNH</h3>
+                    <ul>
+                        <li><p>Thích chụp ảnh đường phố, chụp ảnh chân dung</p></li>
+                        <li><p>Tham gia chụp ảnh tại các sự kiện</p></li>
+                    </ul>
+                    <h3>ĐỌC SÁCH</h3>
+                </td>
+            </table>
         </div>
+
+
+    </div>
+
+    <div>
+
+    </div>
+
+    </div>
     </div>
 </body>
 
