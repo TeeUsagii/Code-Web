@@ -1,101 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
 
-<body>
-    <div style="font-family: Arial, Helvetica, sans-serif; margin: 40px;">
-        <h1>Thông Tin Cá Nhân</h1>
-        <form action="#">
-            <div style="width: 100%;">
-                <div style="display: inline-block; width: 50%; margin: 10px;">
-                    <label for="Email">* Email</label> <br>
-                    <input style="width: 90%; padding: 5px; margin-top: 10px;" type="email" name="" id="Email">
+    <body>
+        <div style="font-family: Arial, Helvetica, sans-serif; padding: 60px;">
+            <h1>Thông Tin Cá Nhân</h1>
+            <form action="#">
+                <div style="width: 100%; display: flex; margin-bottom: 20px;">
 
+                    <div style="width: 50%;">
+                        <label for="Email">* Email</label> <br>
+                        <input
+                            style="width: 80%; padding: 10px; margin-top: 10px;"
+                            type="email" name id="Email">
+                    </div>
+                    <div style="width: 50%; ">
+                        <label for="Tel">* Điện thoại</label> <br>
+                        <input
+                            style="width: 80%; padding: 10px; margin-top: 10px;"
+                            type="tel" id="Tel">
+                    </div>
                 </div>
-                <div style="display: inline-block; width: 40%;">
-                    <label for="Tel">* Điện thoại</label> <br>
-                    <input style="width: 95%; padding: 5px; margin-top: 10px;" type="tel" id="Tel">
+                <div style="width: 100%; margin-bottom: 20px; display: flex;">
+                    <div
+                        style="width: 50%; ">
+                        <label for="Date-time">Ngày sinh</label> <br>
+                        <input
+                            style="width: 80%; padding: 10px; margin-top: 10px;"
+                            type="date" id="Date-time">
+                    </div>
+                    <div style="width: 50%;">
+                        <label for="nationality">Quốc tịch</label> <br>
+                        <select
+                            style="width: 82.7%; padding: 10px; margin-top: 10px;"
+                            name="nationality" id="nationality">
+                            <option value="vietnam">Việt Nam</option>
+                            <option value="china">Trung Quốc</option>
+                            <option value="korea">Hàn Quốc</option>
+                            <option value="japan">Nhật Bản</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div style="width: 50%; margin-bottom: 20px;">
+                        <label for="sex">Giới tính</label> <br>
+                        <input style="margin-top: 10px;" type="radio" name="sex"
+                            id="sex">
+                        <label for="male">Nam</label>
+                        <input type="radio" name="sex" id="sex">
+                        <label for="female">Nữ</label>
+                        <input type="radio" name="sex" id="sex">
+                        <label for="female">Khác</label>
+                    </div>
+                    <div style="width: 50%;">
+                        <label for="marital-status">Tình trạng hôn nhân</label>
+                        <br>
+                        <input style="margin-top: 10px;" type="radio"
+                            name="marital-status" id="marital-status">
+                        <label for>Độc thân</label>
+                        <input type="radio" name="marital-status"
+                            id="marital-status">
+                        <label for>Đã kết hôn</label>
+                    </div>
+                </div>
+                <div style="width: 100%;">
+                    <div style="width: 100%; margin-bottom: 20px;">
+                        <label for="nation">Quốc Gia</label> <br>
+                        <select
+                            style="width: 91.35%; padding: 10px; margin-top: 10px;"
+                            name="nation" id="nation">
+                            <option value="vietnam">Việt Nam</option>
+                            <option value="china">Trung Quốc</option>
+                            <option value="korea">Hàn Quốc</option>
+                            <option value="japan">Nhật Bản</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div style="width: 50%;">
+                        <label for="city">Tỉnh/Thành phố</label> <br>
+                        <select
+                            style="width: 82.7%; padding: 10px; margin-top: 10px;"
+                            name="city" id="city">
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="hungyen">Hưng Yên</option>
+                            <option value="bacgiang">Bắc Giang</option>
+                            <option value="hanam">Hà Nam</option>
+                        </select>
+                    </div>
+                    <div style="width: 50%;">
+                        <label for="district">Quận/Huyện</label> <br>
+                        <select
+                            style="width: 82.7%; padding: 10px; margin-top: 10px;"
+                            name="district" id="district">
+                            <optgroup label="Hà Nội">
+                                <option value="dongda">Đống Đa</option>
+                                <option value="hoankiem">Hoàn Kiếm</option>
+                                <optgroup label="Hưng Yên">
+                                    <option value="tphungyen">TP Hưng Yên</option>
+                                    <option value="kimdong">Kim Động</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="width: 100%;margin-top: 20px;">
+                            <label for="address">Địa chỉ</label> <br>
+                            <input
+                                style="width: 90%; padding: 10px; margin-top: 10px;"
+                                type="text" name="address" id="address">
+                        </div>
+                    </form>
+                    <p><i>* Vui lòng nhập thông tin</i></p>
+                </div>
+            </body>
 
-                </div>
-            </div>
-            <div style="width: 100%;">
-                <div style="display: inline-block; width: 50%; margin: 10px;">
-                    <label for="Date-time">Ngày sinh</label> <br>
-                    <input style="width: 90%; padding: 5px; margin-top: 10px;" type="date" id="Date-time">
-                </div>
-                <div style="display: inline-block; width: 40%;">
-                    <label for="nationality">Quốc tịch</label> <br>
-                    <select style="width: 97%; padding: 5px; margin-top: 10px;" name="nationality" id="nationality">
-                        <option value="vietnam">Việt Nam</option>
-                        <option value="china">Trung Quốc</option>
-                        <option value="korea">Hàn Quốc</option>
-                        <option value="japan">Nhật Bản</option>
-                    </select>
-                </div>
-            </div>
-            <div>
-                <div style="display: inline-block; width: 50%; margin: 10px;">
-                    <label for="sex">Giới tính</label> <br>
-                    <input style="margin-top: 10px;" type="radio" name="sex" id="sex">
-                    <label for="male">Nam</label>
-                    <input type="radio" name="sex" id="sex">
-                    <label for="female">Nữ</label>
-                    <input type="radio" name="sex" id="sex">
-                    <label for="female">Khác</label>
-                </div>
-                <div style="display: inline-block; margin: 10px;">
-                    <label for="marital-status">Tình trạng hôn nhân</label> <br>
-                    <input style="margin-top: 10px;" type="radio" name="marital-status" id="marital-status">
-                    <label for="">Độc thân</label>
-                    <input type="radio" name="marital-status" id="marital-status">
-                    <label for="">Đã kết hôn</label>
-                </div>
-            </div>
-            <div>
-                <div style="width: 100%; margin: 10px;">
-                    <label for="nation">Quốc Gia</label> <br>
-                    <select style="width: 89.9%; padding: 5px; margin-top: 10px;" name="nation" id="nation">
-                        <option value="vietnam">Việt Nam</option>
-                        <option value="china">Trung Quốc</option>
-                        <option value="korea">Hàn Quốc</option>
-                        <option value="japan">Nhật Bản</option>
-                    </select>
-                </div>
-            </div>
-            <div>
-                <div style="display: inline-block; width: 50%; margin: 10px;">
-                    <label for="city">Tỉnh/Thành phố</label> <br>
-                    <select style="width: 90%; padding: 5px; margin-top: 10px;" name="city" id="city">
-                        <option value="hanoi">Hà Nội</option>
-                        <option value="hungyen">Hưng Yên</option>
-                        <option value="bacgiang">Bắc Giang</option>
-                        <option value="hanam">Hà Nam</option>
-                    </select>
-                </div>
-                <div style="display: inline-block; width: 40%;">
-                    <label for="district">Quận/Huyện</label> <br>
-                    <select style="width: 97%; padding: 5px; margin-top: 10px;" name="district" id="district">
-                        <optgroup label="Hà Nội">
-                            <option value="dongda">Đống Đa</option>
-                            <option value="hoankiem">Hoàn Kiếm</option>
-                        <optgroup label="Hưng Yên">
-                            <option value="tphungyen">TP Hưng Yên</option>
-                            <option value="kimdong">Kim Động</option>
-                    </select>
-                </div>
-            </div>
-            <div style="width: 100%; margin: 10px;">
-                <label for="address">Địa chỉ</label> <br>
-                <input style="width: 89.1%; padding: 5px; margin-top: 10px;" type="text" name="address" id="address">
-            </div>
-        </form>
-        <p><i>* Vui lòng nhập thông tin</i></p>
-    </div>
-</body>
-
-</html>
+        </html>
