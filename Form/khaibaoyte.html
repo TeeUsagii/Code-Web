@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tờ khai y tế bệnh viện nhi trung ương</title>
+</head>
+
+<body>
+    <div style="font-family: Arial, Helvetica, sans-serif;">
+        <div style="height: 70%; background-color: rgb(53, 225, 153);">
+            <img style="height: 100%;"
+                src="https://benhviennhitrunguong.gov.vn/wp-content/themes/benh-vien-nhi/assets/images/logo.png" alt="">
+        </div>
+        <div style="color: #22c988;">
+            <h1 style="text-align: center;">TỜ KHAI Y TẾ<br> BỆNH VIỆN NHI TRUNG ƯƠNG</h1>
+            <p style="text-align: center; font-size: 14px;">
+            <i>
+                VIỆC CUNG CẤP THÔNG TIN VÀ PHỐI HỢP THAM GIA CỦA ÔNG/BÀ LÀ TỰ NGUYỆN VÀ TRUNG THỰC VÌ MỤC ĐÍCH CHỐNG DỊCH
+                COVID-19
+            </i>
+            </p>
+        </div>
+        <div style="border: 1px solid; border-radius: 10px; padding: 10px;">
+            <form action="#">
+                <div style="width: 100%;">
+                    <input type="radio" name="type" id="type">
+                    <label for="benhnhan"><strong>Bệnh nhân</strong></label>
+                    <input type="radio" name="type" id="type">
+                    <label for="nguoinha"><strong>Người nhà</strong></label>
+                    <input type="radio" name="type" id="type">
+                    <label for="khaiho"><strong>Khai hộ</strong></label>
+                </div>
+                <div style="width: 100%; padding-top: 10px; display: flex; flex-direction: column; flex-direction: column;">
+                    <label for="idbn">Mã bệnh nhân:</label>
+                    <input style="padding: 10px; margin-top: 5px; border-radius: 5px;" type="text" name="idbn" id="idbn" placeholder="Nhập mã bệnh nhân">
+                </div>
+                <div style="width: 100%; padding-top: 10px; display: flex; flex-direction: column;">
+                    <label for="telbn">Số điện thoại <i>(*)</i>:</label>
+                    <input style="padding: 10px; margin-top: 5px; border-radius: 5px;" type="tel" name="telbn" id="telbn" placeholder="Số điện thoại bệnh nhân">
+                </div>
+                <div style="width: 100%; padding-top: 10px; display: flex; flex-direction: column;">
+                    <label for="namebn">Họ và tên <i>(*)</i>:</label>
+                    <input style="padding: 10px; margin-top: 5px; border-radius: 5px;" type="text" name="namebn" id="namebn" placeholder="Họ và tên">
+                </div>
+                <div style="width: 100%; padding-top: 10px; display: flex; flex-direction: column;">
+                    <label for="datebn">Ngày sinh <i>(*)</i>:</label>
+                    <input style="padding: 10px; margin-top: 5px; border-radius: 5px;" type="date" name="datebn" id="datebn">
+                </div>
+                <div style="width: 100%; padding-top: 10px; display: flex; flex-direction: column;">
+                    <label for="sexbn">Giới tính <i>(*)</i>:</label>
+                    <select style="padding: 10px; margin-top: 5px; border-radius: 5px;" name="sexbn" id="sexbn">
+                        <option value="male">Nam</option>
+                        <option value="female">Nữ</option>
+                    </select>
+                </div>
+                <div style="width: 100%; padding-top: 10px; display: flex; flex-direction: column;">
+                    <label for="addressbn">Địa chỉ <i>(*)</i>:</label>
+                    <input style="padding: 10px; margin-top: 5px; border-radius: 5px;" type="text" name="addressbn" id="addressbn" placeholder="Địa chỉ">
+                </div>
+                <div style="width: 100%; padding-top: 10px; display: flex; flex-direction: column;">
+                    <label for="reasonbn">Lý do đến bệnh viện <i>(*)</i>:</label>
+                    <input style="padding: 10px; margin-top: 5px; border-radius: 5px;" type="text" name="reasonbn" id="reasonbn" placeholder="Khám, chữa bệnh">
+                </div>
+                <div style="width: 100%; padding-top: 10px; display: flex; flex-direction: column;">
+                    <p>Hiện tại bạn có những dấu hiệu nào sau đây <i>(*)</i>:</p>
+                    <table style="border: solid 1px; padding: 5px;">
+                        <tr>
+                            <th style="width: 50%; border-right: solid 1px; border-bottom: 1px solid;">Dấu hiệu</th>
+                            <th style=" border-right: solid 1px; border-bottom: 1px solid;">Có</th>
+                            <th style="border-bottom: 1px solid;">Không</th>
+                        </tr>
+                        <tr>
+                            <td style=" border-right: solid 1px; ">
+                                <label for="dauhieubn">
+                                    Đi đến hoặc tiếp xúc với người đi đến vùng dịch tại Việt Nam theo thông báo của Bộ Y
+                                    tế,
+                                    Sở Y tế các tỉnh
+                                </label>
+                            </td>
+                            <td style="border-right: solid 1px; text-align: center; vertical-align: center;">
+                                <input type="radio" name="dauhieubn" id="dauhieubn">
+                            </td>
+                            <td style="text-align: center; vertical-align: center;">
+                                <input type="radio" name="dauhieubn" id="dauhieubn">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="padding-top: 10px; display: flex; justify-content: center;">
+                    <button style="padding: 10px 20px;" type="submit">Gửi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
