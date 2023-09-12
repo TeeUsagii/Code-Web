@@ -1,11 +1,65 @@
+/* html */
+body {
+    max-width: 600px;
+    margin: 0 30px;
+}
+
+i.red {
+    color: red;
+}
+
+.pt-1 {
+    padding-top: 10px;
+}
+
+label {
+    width: 110px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px;
+}
+
+legend {
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+select {
+    width: 261px;
+    padding: 4px;
+}
+
+input.type-input {
+    width: 249px;
+    padding: 4px;
+}
+
+textarea {
+    width: 251px;
+    height: 75px;
+    padding: 4px;
+    resize: none;
+}
+
+/* Header */
 #header {}
+
+
+
+h1 {
+    margin-bottom: 0;
+}
 
 /* Container */
 #container {}
 
-/* Text area */
-textarea {
-    resize: none;
+/* submit-app */
+#submit-app {
+
 }
 
-#footer {}
+.submit-input {
+    margin-top: 10px;
+    padding: 10px;
+}
