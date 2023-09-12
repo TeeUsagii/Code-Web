@@ -1,0 +1,11 @@
+#header {}
+
+/* Container */
+#container {}
+
+/* Text area */
+textarea {
+    resize: none;
+}
+
+#footer {}
