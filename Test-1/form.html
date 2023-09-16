@@ -14,36 +14,77 @@
         <i>Please complete the form. Mandatory filds are marked with a <i class="red">*</i></i>
     </div>
 
-    <div id="container">
-        <div class="contact-details">
-            <fieldset>
-                <legend class="lengend-text">Contact Details</legend>
-                <label for="name-input">Name <i class="red">*</i></label>
-                <input type="text" name="name-input" id="name-input">
-                <label for="tel-input">Telephone</label>
-                <input type="tel" name="tel-input" id="tel-input">
-                <label for="email-input">Email</label>
-                <input type="email" name="email-input" id="email-input">
-            </fieldset>
+    <form id="form-input" action="#">
 
-            <fieldset>
-                <legend class="lengend-text">Personal Information</legend>
-                <label for="age-input"><i class="red">*</i> Age</label>
-                <input type="number" name="age-input" id="age-input">
-                <label for="gender-select">Gender</label>   
-                <select name="gender-select" id="gender-select">
-                    <option value="male-gender">Male</option>
-                    <option value="female-gender">Female</option>
-                </select>
-                <label for="">When did you first know you wanted to be a zoo-keeper</label>
-                <textarea name="" id="" cols="30" rows="5"></textarea>
-            </fieldset>
+        <div class="container">
+            <div class="contact-details">
+                <div class="pt-1">
+                    <fieldset class="">
+                        <legend class="lengend-text">Contact Details</legend>
+                        <div class="">
+                            <label for="name-input">Name <i class="red">*</i></label>
+                            <input class="type-input" type="text" name="name-input" id="name-input">
+                        </div>
+                        <div class="pt-1">
+                            <label for="tel-input">Telephone</label>
+                            <input class="type-input" type="tel" name="tel-input" id="tel-input">
+                        </div>
+                        <div class="pt-1">
+                            <label for="email-input">Email <i class="red">*</i></label>
+                            <input class="type-input" type="email" name="email-input" id="email-input">
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="pt-1">
+                    <fieldset>
+                        <legend class="lengend-text">Personal Information</legend>
+                        <div>
+                            <label for="age-input"><i class="red">*</i> Age</label>
+                            <input class="type-input" type="number" name="age-input" id="age-input">
+                        </div>
+
+                        <div class="pt-1">
+                            <label for="gender-select">Gender</label>
+                            <select name="gender-select" id="gender-select">
+                                <option value="male-gender">Male</option>
+                                <option value="female-gender">Female</option>
+                            </select>
+                        </div>
+                        <div class="pt-1">
+                            <label for="">When did you first know you wanted to be a zoo-keeper?</label>
+                            <textarea name="" id="" cols="30" rows="5"></textarea>
+                        </div>
+                    </fieldset>
+
+                </div>
+                <div class="pt-1">
+                    <fieldset>
+                        <legend>Pick Your Favorite Animals</legend>
+                        <label for="zebra">
+                            <input id="zebra" type="checkbox"> Zebra</label>
+                        <label for="cat">
+                            <input id="cat" type="checkbox"> Cat</label>
+                        <label for="anaconda">
+                            <input id="anaconda" type="checkbox"> Anaconda</label>
+                        <label for="human">
+                            <input id="human" type="checkbox"> Human</label>
+                        <label for="elephant">
+                            <input id="elephant" type="checkbox"> Elephant</label>
+                        <label for="wildebeest">
+                            <input id="wildebeest" type="checkbox"> Wildebeest</label>
+                        <label for="pigeon">
+                            <input id="pigeon" type="checkbox"> Pigeon</label>
+                        <label for="crab">
+                            <input id="crab" type="checkbox"> Crab</label>
+                    </fieldset>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div id="footer">
-
-    </div>
+        <div class="submit-app">
+            <input class="submit-input" type="submit" value="Submit Application">
+        </div>
+    </form>
 </body>
 
 </html>
