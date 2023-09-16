@@ -1,0 +1,8 @@
+input {
+    padding: 5px;
+    margin: 5px;
+}
+
+.math-button > input {
+    padding: 5px 15px;
+}

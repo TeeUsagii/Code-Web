@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm điểm sinh viên</title>
+</head>
+<body>
+    <h1>Nhập thông tin sinh viên</h1>
+    <label for="studentName">Tên sinh viên:</label>
+    <input type="text" id="studentName">
+    <br><br>
+    <label for="studentScore">Điểm:</label>
+    <input type="number" id="studentScore">
+    <br><br>
+    <button onclick="addStudent()">Thêm sinh viên</button>
+    
+    <h2>Tìm điểm sinh viên</h2>
+    <label for="searchName">Tìm tên sinh viên:</label>
+    <input type="text" id="searchName">
+    <br><br>
+    <button onclick="searchStudent()">Tìm kiếm</button>
+    
+    <h2>Kết quả:</h2>
+    <p id="result"></p>
+
+    <script>
+        // Khai báo mảng để lưu trữ tên sinh viên và điểm số
+        var students = [];
+
+        // Hàm thêm sinh viên vào mảng
+        function addStudent() {
+            var name = document.getElementById("studentName").value;
+            var score = document.getElementById("studentScore").value;
+            
+            if (name.trim() !== "" && !isNaN(score)) {
+                students.push({ name: name, score: parseFloat(score) });
+                alert("Thêm sinh viên thành công.");
+            } else {
+                alert("Vui lòng nhập tên và điểm hợp lệ.");
+            }
+            
+            // Xóa dữ liệu nhập sau khi thêm sinh viên
+            document.getElementById("studentName").value = "";
+            document.getElementById("studentScore").value = "";
+        }
+
+        // Hàm tìm điểm của sinh viên
+        function searchStudent() {
+            var searchName = document.getElementById("searchName").value;
+            var found = false;
+            var result = "";
+            
+            for (var i = 0; i < students.length; i++) {
+                if (students[i].name === searchName) {
+                    result = "Tên: " + students[i].name + ", Điểm: " + students[i].score;
+                    found = true;
+                    break;
+                }
+            }
+            
+            if (found) {
+                document.getElementById("result").textContent = result;
+            } else {
+                document.getElementById("result").textContent = "Không tìm thấy sinh viên có tên " + searchName;
+            }
+            
+            // Xóa dữ liệu tìm kiếm sau khi tìm xong
+            document.getElementById("searchName").value = "";
+        }
+    </script>
+</body>
+</html>
