@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tìm điểm sinh viên</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <h1>Nhập thông tin sinh viên</h1>
     <label for="studentName">Tên sinh viên:</label>
@@ -14,16 +17,29 @@
     <input type="number" id="studentScore">
     <br><br>
     <button onclick="addStudent()">Thêm sinh viên</button>
-    
+
     <h2>Tìm điểm sinh viên</h2>
     <label for="searchName">Tìm tên sinh viên:</label>
     <input type="text" id="searchName">
     <br><br>
     <button onclick="searchStudent()">Tìm kiếm</button>
-    
-    <h2>Kết quả:</h2>
-    <p id="result"></p>
 
+    <h2>Xóa sinh viên</h2>
+    <label for="deleteName">Nhập tên sinh viên muốn xóa:</label>
+    <input type="text" id="deleteName">
+    <br><br>
+    <button onclick="deleteStudent()">Xóa sinh viên</button>
+
+    <h2>Kết quả:</h2>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Tên</th>
+                <th>Điểm</th>
+            </tr>
+        </thead>
+        <tbody id="tBody"></tbody>
+    </table>
     <script>
         // Khai báo mảng để lưu trữ tên sinh viên và điểm số
         var students = [];
@@ -32,14 +48,14 @@
         function addStudent() {
             var name = document.getElementById("studentName").value;
             var score = document.getElementById("studentScore").value;
-            
+
             if (name.trim() !== "" && !isNaN(score)) {
                 students.push({ name: name, score: parseFloat(score) });
                 alert("Thêm sinh viên thành công.");
             } else {
                 alert("Vui lòng nhập tên và điểm hợp lệ.");
             }
-            
+
             // Xóa dữ liệu nhập sau khi thêm sinh viên
             document.getElementById("studentName").value = "";
             document.getElementById("studentScore").value = "";
@@ -50,24 +66,61 @@
             var searchName = document.getElementById("searchName").value;
             var found = false;
             var result = "";
-            
+
+            var tableBody = document.querySelector("#studentTable tbody");
+            tableBody.innerHTML = ""; // Xóa nội dung bảng cũ
+
             for (var i = 0; i < students.length; i++) {
-                if (students[i].name === searchName) {
-                    result = "Tên: " + students[i].name + ", Điểm: " + students[i].score;
+                var student = students[i];
+                var row = tableBody.insertRow();
+                var cellName = row.insertCell(0);
+                var cellScore = row.insertCell(1);
+
+                cellName.textContent = student.name;
+                cellScore.textContent = student.score;
+
+                if (student.name === searchName) {
+                    row.classList.add("highlight"); // Tô vàng dòng có sinh viên tìm thấy
                     found = true;
-                    break;
                 }
             }
-            
-            if (found) {
-                document.getElementById("result").textContent = result;
-            } else {
+
+            if (!found) {
                 document.getElementById("result").textContent = "Không tìm thấy sinh viên có tên " + searchName;
+            } else {
+                document.getElementById("result").textContent = ""; // Xóa thông báo nếu có
             }
-            
+
+
             // Xóa dữ liệu tìm kiếm sau khi tìm xong
             document.getElementById("searchName").value = "";
         }
+
+        // Hàm xóa sinh viên dựa trên tên
+        function deleteStudent() {
+            var deleteName = document.getElementById("deleteName").value;
+            var deleted = false;
+
+            for (var i = 0; i < students.length; i++) {
+                if (students[i].name === deleteName) {
+                    students.splice(i, 1); // Xóa sinh viên khỏi mảng
+                    deleted = true;
+                    break;
+                }
+            }
+
+            if (deleted) {
+                // Cập nhật lại bảng sau khi xóa
+                searchStudent();
+                alert("Đã xóa sinh viên có tên " + deleteName);
+            } else {
+                alert("Không tìm thấy sinh viên có tên " + deleteName + " để xóa.");
+            }
+
+            // Xóa dữ liệu nhập sau khi xóa sinh viên
+            document.getElementById("deleteName").value = "";
+        }
     </script>
 </body>
+
 </html>

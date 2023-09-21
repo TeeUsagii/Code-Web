@@ -3,6 +3,15 @@ input {
     margin: 5px;
 }
 
-.math-button > input {
+.math-button>input {
     padding: 5px 15px;
+}
+/* Định dạng cho sinh viên được tìm thấy và sinh viên bị xóa */
+.highlight {
+    background-color: yellow;
+}
+
+.deleted {
+    background-color: red;
+    color: white;
 }
