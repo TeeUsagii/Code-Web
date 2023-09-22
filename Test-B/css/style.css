@@ -130,6 +130,10 @@ body {
     cursor: pointer;
 }
 
+.color-item>img:hover {
+    opacity: 0.5;
+}
+
 .choose-quantity-like {
     display: flex;
     margin-top: 20px;
