@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 20% 0 20% ;
+}
+
+input {
+    padding: 5px;
+    width: 200px;
+}
+
+select {
+    padding: 5px;
+    width: 213px; 
+}
+
+label {
+    display: inline-block;
+    width: 280px; /* Độ rộng của label */
+    padding-right: 100px;
+}
+
+th, td{
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 5px;
+}
+
+.tt-congnhan {
+    display: flex;
+    flex-direction: column;
+}
+
+.tt-congnhan > div {
+    margin: 10px;
+}
+
+.btn-mode {
+    float: right;
+    padding: 10px 30px;
+    margin-right: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    color: #ffff;
+    background-color: black;
+}

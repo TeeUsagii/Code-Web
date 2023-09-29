@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra học phần JS</title>
+    <script src="./function.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Quản lý danh sách công nhân</h1>
+    <div>
+        <div class="tt-congnhan">
+            <div>
+                <label for="hoDem">Họ đệm:</label>
+                <input type="text" id="hoDem">
+            </div>
+            <div>
+                <label for="ten">Tên:</label>
+                <input type="text" id="ten">
+            </div>
+            <div>
+                <label for="namSinh">Năm sinh:</label>
+                <input type="date" id="namSinh">
+            </div>
+            <div>
+                <label for="gioiTinh">Giới tính:</label>
+                <select id="gioiTinh">
+                    <option value="Nam">Nam</option>
+                    <option value="Nữ">Nữ</option>
+                </select>
+            </div>
+            <div>
+                <label for="soCMND">Số căn cước công dân:</label>
+                <input type="text" id="soCMND">
+            </div>
+        </div>
+        <button class="btn-mode" onclick="quyetDinhThaoTac()">Thêm</button>
+
+    </div>
+
+    <table border="1" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ đệm</th>
+                <th>Tên</th>
+                <th>Năm sinh</th>
+                <th>Giới tính</th>
+                <th>Số căn cước công dân</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody id="danhSachCongNhan">
+            <!-- Danh sách công nhân sẽ được hiển thị ở đây -->
+        </tbody>
+    </table>
+
+</body>
+
+</html>
