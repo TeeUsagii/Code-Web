@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thong tin sinh vien</title>
+</head>
+<body>
+    <h1>Nhập thông tin sinh viên</h1>
+    <form action="process.php" method="post">
+        Tên: <input type="text" name="name"><br>
+        Tuổi: <input type="number" name="age"><br>
+        Lớp: <input type="text" name="class"><br>
+        <input type="submit" value="Thêm sinh viên">
+    </form>
+    <form action="print.php" method="post">
+        <input type="submit" value="In danh sách sinh viên">
+    </form>
+</body>
+</html>
